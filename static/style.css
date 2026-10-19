@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0b0c1a;
+    color: #f0f0f5;
+    margin: 0;
+    padding: 0 1rem 3rem;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: #9aa0c3;
+    margin-top: 0.3rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#date-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    background: #151735;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#date-form label {
+    color: #cfd2f0;
+}
+
+#date-form input,
+#date-form button {
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #2e315e;
+    font-size: 0.95rem;
+}
+
+#date-form button {
+    background: #4f5bd5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+#date-form button:hover {
+    background: #3b45b3;
+}
+
+#date-form button:disabled {
+    background: #3a3d5c;
+    cursor: not-allowed;
+}
+
+#apod-container {
+    background: #151735;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+#apod-container h2 {
+    margin-top: 0;
+}
+
+#apod-container .date-label {
+    color: #9aa0c3;
+    margin-top: -0.5rem;
+}
+
+#apod-container img,
+#apod-container iframe {
+    width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: block;
+}
+
+#apod-container iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+}
+
+#apod-container p.explanation {
+    line-height: 1.6;
+    color: #dcdcec;
+}
+
+.error-message {
+    color: #ff8080;
+}

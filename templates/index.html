@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Information App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1> Cosmic Daily</h1>
+        <p class="subtitle">NASA's Astronomy Picture of the Day</p>
+    </header>
+
+    <main>
+        <form id="date-form">
+            <label for="date-input">Pick a date:</label>
+            <input type="date" id="date-input" min="1995-06-16">
+            <button type="submit">Search</button>
+            <button type="button" id="today-btn">Today</button>
+        </form>
+
+        <div id="apod-container">
+            <p>Loading...</p>
+        </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
